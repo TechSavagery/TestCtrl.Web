@@ -12,12 +12,9 @@ import {
 } from '@nebular/theme';
 
 import { ThemeModule } from '../../@theme/theme.module';
-import { FormsRoutingModule } from './forms-routing.module';
-import { FormsComponent } from './forms.component';
-import { FormInputsComponent } from './form-inputs/form-inputs.component';
-import { FormLayoutsComponent } from './form-layouts/form-layouts.component';
-import { DatepickerComponent } from './datepicker/datepicker.component';
-import { ButtonsComponent } from './buttons/buttons.component';
+import { TestPacksRoutingModule } from './test-packs-routing.module';
+import { TestPacksComponent } from './test-packs.component';
+import { TestPacksRequestComponent } from './request/test-packs-request.component';
 import { LayoutModule} from '../layout/layout.module';
 
 @NgModule({
@@ -31,17 +28,14 @@ import { LayoutModule} from '../layout/layout.module';
     NbCheckboxModule,
     NbRadioModule,
     NbDatepickerModule,
-    FormsRoutingModule,
+    TestPacksRoutingModule,
     NbSelectModule,
     NbIconModule,
     LayoutModule,
   ],
   declarations: [
-    FormsComponent,
-    ButtonsComponent,
-    FormInputsComponent,
-    FormLayoutsComponent,
-    DatepickerComponent,
+    TestPacksComponent,
+    TestPacksRequestComponent,
   ],
 })
-export class FormsModule { }
+export class TestPacksModule { }

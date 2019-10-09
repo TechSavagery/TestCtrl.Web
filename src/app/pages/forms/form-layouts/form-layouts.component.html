@@ -5,6 +5,34 @@
     <nb-card>
       <nb-card-header>REQUEST</nb-card-header>
       <nb-card-body>
+          <div class="form-group row">
+              <div style="padding: 50px; display: inline-block;">
+              <nb-select selected="1">
+                  <nb-option value="1">GET</nb-option>
+                  <nb-option value="2">POST</nb-option>
+                  <nb-option value="3">PUT</nb-option>
+                  <nb-option value="4">DELETE</nb-option>
+                </nb-select>
+              </div>
+              <div style="padding: 50px; display: inline-block;">
+                <input type="text" nbInput fullWidth id="requestUrl" placeholder="Request Url">
+              </div>
+              <div style="padding: 50px; display: inline-block;">
+                  <button type="submit" nbButton status="primary">SEND</button>
+                </div>
+            </div>
+          <nb-tabset>
+              <nb-tab tabTitle="Query Params">
+                  <div class="form-group">
+                      <textarea nbInput placeholder="Message"></textarea>
+                    </div>
+              </nb-tab>
+              <nb-tab tabTitle="Headers">
+                  <div class="form-group">
+                      <textarea rows="10" cols="100"nbInput placeholder="Message"></textarea>
+                    </div>
+              </nb-tab>
+            </nb-tabset>
         <form>
           <div class="form-group row">
             <label for="inputEmail1" class="label col-sm-3 col-form-label">Email</label>
